@@ -21,7 +21,6 @@ const App: React.FC = () => {
             <Cards />
           </main>
 
-          {/* Footer */}
           <footer className="bg-dark text-light">
             <Footer />
           </footer>

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import CardComponent from './CardComponent'; // Assicurati che il nome del componente sia corretto
-
-// Import delle immagini
+import CardComponent from './CardComponent';
 import image1 from '../assets/images/1a.png';
 import image2 from '../assets/images/1b.png';
 import image3 from '../assets/images/1c.png';
@@ -17,21 +15,20 @@ const Cards: React.FC = () => {
 
       <Container fluid className="bg-dark py-3">
         <Row xs={1} sm={2} lg={3} className="g-3">
-          {/* Prima Card */}
+
           <Col>
             <CardComponent
               src={image1}
               description="Rilassati, al resto ci pensiamo noi. Ascolta Apple Music Chill"
             />
           </Col>
-          {/* Seconda Card */}
+
           <Col>
             <CardComponent
               src={image2}
               description="Ecco la nuova casa della musica latina"
             />
           </Col>
-          {/* Terza Card (visibile solo su dispositivi grandi) */}
           <Col className="d-none d-lg-block">
             <CardComponent
               src={image3}
